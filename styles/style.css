@@ -1,0 +1,271 @@
+/*----- Start of Common/Utilites Files ------- */
+body {
+    width: 1024p;
+    margin: 0 auto;
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*----- End of Common/Utilites Files ------- */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> CSS Variables <<<<<<<<<<<<<<<<<<<<<<<<< */
+:root {
+    --primary-font-size: 16px;
+    --primary-font-family: 'Poppins', sans-serif;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> CSS Variables <<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/*----- Start of Header section ------- */
+header {
+    padding: 20px 5px 0 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.top-banner {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    color: #fff;
+    background-image: linear-gradient(120deg, #79adfc 0%, #402c2c 100%);
+    border-radius: 35px;
+}
+
+.top-banner-text {
+    width: 46%;
+    margin-left: 130px;
+    margin-top: 110px;
+}
+
+.top-banner-text>h1 {
+    font-size: 70px;
+    line-height: 75px;
+    margin-bottom: 35px;
+}
+
+.top-banner-text>p {
+    line-height: 25px;
+    margin-right: 67px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+#link-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.fa-greater-than:before {
+    content: "\3e";
+    font-size: inherit;
+    margin-left: 10px;
+}
+
+.top-banner-img {
+    padding-right: 20px;
+}
+
+.top-banner-img img {
+    width: 543px;
+    height: 565px;
+    margin-bottom: -6px;
+    margin-top: 15px;
+}
+
+
+/*----- End of Header section ------- */
+
+/*----- Start of Fixed Aside Section ------- */
+aside {
+    position: sticky;
+    top: 0;
+}
+
+.fixed-aside {
+    background: black;
+    height: 265px;
+    width: 255px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+.fixed-aside nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px;
+}
+
+.fixed-aside>nav a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 15px 0px;
+    transition-property: width, background-color;
+    transition-duration: 0.5s;
+    transition-delay: 10s;
+}
+
+.fixed-aside>nav a:hover {
+    background-color: rgb(222, 181, 135);
+    width: 350px;
+}
+
+
+
+#active {
+    text-decoration: none;
+    color: white;
+    background: orangered;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.active {
+    background-color: orangered;
+}
+
+/*----- End of Fixed Aside Section ------- */
+
+
+
+/*----- Start of Match Blog Section ------- */
+.match-flashcard {
+    display: flex;
+    gap: 20px;
+}
+
+.match-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.matchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+}
+
+.match img {
+    width: 290px;
+    height: auto;
+}
+
+.match-news {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.match-news a {
+    text-decoration: none;
+    padding: 1px 7px;
+    border: 1px solid #545454;
+    border-radius: 3px;
+    margin-right: 187px;
+}
+
+
+
+.match-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.match-info>span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 35px;
+}
+
+.fa-clock-five,
+.fa-clock-five {
+    color: #454545;
+    /* margin-right: 10px; */
+}
+
+span>p {
+    margin-left: 10px
+}
+
+/*----- End of Match Blog Section ------- */
+
+/* Footer Started */
+footer {
+    background: #334c95b8;
+    height: 150px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background: #334c95b8;
+    height: 150px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+}
+
+.foot-divider {
+    border: 1px solid #585858;
+    width: 1000px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 3px 14px;
+}
+
+/* Footer Ended */
